@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORTIS | New Wave Studio</title>
+    <style>
+        :root {
+            --bg-color: #f4f1ea; /* 配合標誌底色的米色 */
+            --text-color: #2b2624; /* 配合標誌深色的深咖色 */
+            --accent-green: #00ff41; /* 歌詞中提到的綠色燈光 */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 導航欄 */
+        nav {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        /* 主視覺區 */
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        /* 網誌內容 */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .lyric-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+
+        .highlight {
+            color: var(--accent-green);
+            background: var(--text-color);
+            padding: 0.2rem 0.5rem;
+            font-weight: bold;
+        }
+
+        .verse {
+            margin-bottom: 2.5rem;
+        }
+
+        .verse p {
+            margin: 5px 0;
+        }
+
+        .korean {
+            font-weight: 600;
+            display: block;
+        }
+
+        .chinese {
+            color: #666;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .chorus {
+            text-align: center;
+            font-size: 1.2rem;
+            border-left: 4px solid var(--text-color);
+            border-right: 4px solid var(--text-color);
+            padding: 2rem;
+            margin: 2rem 0;
+            background: #fafafa;
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 4rem;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+
+        /* 動畫效果 */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .new-shit-badge {
+            display: inline-block;
+            margin-top: 2rem;
+            border: 2px solid var(--text-color);
+            padding: 1rem 2rem;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="CORTIS_Logo (1).png" alt="CORTIS Logo" class="logo">
+        <div>STUDIO // 2026</div>
+    </nav>
+
+    <header>
+        <h1>NEW HIT</h1>
+        <p class="subtitle">"Paint the town, <span class="highlight">초록색의 lights</span>"</p>
+    </header>
+
+    <main>
+        <article class="lyric-section">
+            
+            <div class="verse">
+                <span class="korean">가져와 new beat / 가져와 new hit</span>
+                <span class="chinese">帶來新的節拍 / 帶來新的熱門曲</span>
+                <span class="korean">만들어 new shit</span>
+                <span class="chinese">創造新的作品</span>
+            </div>
+
+            <div class="chorus">
+                <strong>I just gotta get it</strong><br>
+                Watch me go, go, go, go, go, go
+            </div>
+
+            <div class="verse">
+                <span class="korean">바지 내려 입고 우린 studio로 가지</span>
+                <span class="chinese">拉下褲子，我們去工作室</span>
+                <span class="korean">Drippy, 고장 난 듯 배수관이, yeah, yeah</span>
+                <span class="chinese">潮流感，像破損的排水管一樣，耶，耶</span>
+                <span class="korean">불러와 new wave, Poseidon같이</span>
+                <span class="chinese">帶來新的潮流，像波塞冬一樣</span>
+            </div>
+
+            <div class="verse" style="text-align: right;">
+                <span class="korean">우린 오늘 만들었지, and this track is so sick</span>
+                <span class="chinese">我們今天創作了，這首曲子超棒</span>
+                <span class="korean">레벨 좀 더 키워, 이 노래는 달려 도시를</span>
+                <span class="chinese">提升音量，這首歌跑遍整個城市</span>
+            </div>
+
+            <div style="text-align: center;">
+                <div class="new-shit-badge">I'M ON THE NEW SHIT</div>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2026 CORTIS ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
