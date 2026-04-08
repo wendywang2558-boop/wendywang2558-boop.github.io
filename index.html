@@ -1,0 +1,230 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CORTIS | New Wave Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg-color: #f4f1ea;
+    --text-color: #2b2624;
+    --accent-green: #00ff41;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* 導航 */
+nav {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===== 封面 HERO ===== */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("Cortis.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* 漸層遮罩 */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.85));
+    backdrop-filter: blur(2px);
+}
+
+/* 封面內容 */
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+/* 主標 */
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 8px;
+    margin: 0;
+}
+
+/* 副標 */
+.hero-content h2 {
+    font-size: 2rem;
+    color: var(--accent-green);
+    margin: 1rem 0;
+}
+
+/* 描述 */
+.hero-content p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* 標籤 */
+.hero-tag {
+    margin-top: 2rem;
+    display: inline-block;
+    border: 2px solid var(--accent-green);
+    padding: 0.5rem 1.5rem;
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+/* 內容區 */
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.lyric-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-top: -80px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.korean {
+    font-weight: bold;
+}
+
+.chinese {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.highlight {
+    color: var(--accent-green);
+    text-shadow: 0 0 10px var(--accent-green);
+}
+
+.chorus {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 2px solid var(--text-color);
+}
+
+/* AI說明 */
+.ai-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #fafafa;
+    border-left: 5px solid var(--accent-green);
+}
+
+/* 動畫 */
+.new-shit-badge {
+    display: inline-block;
+    margin-top: 2rem;
+    border: 2px solid var(--text-color);
+    padding: 1rem 2rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+/* 手機版 */
+@media (max-width:600px){
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div>CORTIS</div>
+    <div>2026</div>
+</nav>
+
+<!-- 封面 -->
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>CORTIS</h1>
+        <h2>NEW WAVE ERA</h2>
+        <p>AI Generated Visual × Music Culture</p>
+
+        <div class="hero-tag">
+            2026 BLOG COVER
+        </div>
+    </div>
+</section>
+
+<main>
+
+<!-- 歌詞 -->
+<section class="lyric-section">
+
+    <div>
+        <span class="korean">가져와 new beat / 가져와 new hit</span><br>
+        <span class="chinese">帶來新的節拍 / 帶來新的熱門曲</span>
+    </div>
+
+    <div class="chorus">
+        I just gotta get it<br>
+        Watch me go go go
+    </div>
+
+    <div>
+        <span class="korean">불러와 new wave Poseidon같이</span><br>
+        <span class="chinese">帶來新的浪潮 像波塞冬一樣</span>
+    </div>
+
+    <div style="text-align:center;">
+        <div class="new-shit-badge">I'M ON THE NEW SHIT</div>
+    </div>
+
+</section>
+
+<!-- AI說明 -->
+<section class="ai-section">
+    <h3>生成式AI應用說明</h3>
+    <p>
+        本網誌封面圖片透過生成式AI設計風格進行製作，結合潮流音樂與戶外場景，
+        呈現出New Wave音樂文化的視覺意象。透過AI生成影像與前端設計整合，
+        強化整體品牌感與視覺吸引力，並提升數位內容創作的效率。
+    </p>
+</section>
+
+</main>
+
+<footer style="text-align:center; padding:3rem;">
+    © 2026 CORTIS
+</footer>
+
+</body>
+</html>
+```
